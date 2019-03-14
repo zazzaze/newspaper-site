@@ -1,0 +1,226 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+section{
+    height: 100vh;
+}
+
+article{
+    height: 100vh;
+    width: auto;
+    display: inline-block;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*home block*/
+
+.cover{
+    display: flex;
+    justify-content: flex-start;
+    background: repeating-linear-gradient(to right top, transparent, transparent 5em, rgba(252, 122, 213, 0.5) 5em, rgba(252, 122, 213, 0.5) 10em);
+}
+
+.cover header{
+    display: block;
+    height: 90vh;
+    width: 18vw;
+    background-color: #3A56DE;
+    padding: 5vh 0;
+    box-shadow: 0 0 10px 5px rgb(15, 28, 92);
+}
+
+.cover header h2{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.cover header ul{
+    margin-top: 4em;
+}
+
+.cover header ul li{
+    color: white;
+    margin-top: 2em;
+}
+
+.cover header ul li a{
+    color: white;
+    font-size: 2em;
+}
+
+.cover .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 82vw;
+}
+
+.cover .content .logo{
+    width: 15em;
+    height: 4em;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid black;
+    padding: 5px;
+    margin-top: 2vh;
+}
+
+.autor{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.autor img{
+    height: 700px;
+    width: auto;
+}
+
+.autor__words{
+    width: 30em;
+    text-align: center;
+}
+
+.autor__words h2{
+    font-size: 3em;
+}
+
+.autor__words p{
+    font-size: 1.5em;
+}
+
+/*articles unique elements*/
+.star{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 100%, transparent), url('images/popart-music.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-first{
+    background-color: #F9DC23;
+}
+
+.title-second{
+    background-color: #00CD74;
+}
+
+.title-third{
+    background-color: #994D8E;
+}
+
+.title-firth{
+    background-color: #EA7909;
+}
+
+.title-fifth{
+    background-color: #B94545;
+}
+
+
+
+/*style for all articles*/
+article{
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2em;
+}
+
+.title{
+    display:block;
+    width: 5em;
+    height:100%;
+    writing-mode: vertical-lr;
+    display: flex;
+    box-shadow: 6px 0 10px 4px black; 
+}
+
+.title h2{
+    font-size: 2.5rem;
+    margin: auto;
+    transform: rotate(180deg);
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+
+article .content{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.news__card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 70vh;
+    width: 30em;
+    margin-top: 10vh;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    margin-right: 2em;
+}
+
+.news__card:last-child{
+    margin-right: 0;
+}
+
+.news__card header,
+.news__card footer{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__card header{
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.news__card .text{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.news__card .text p{
+    text-overflow: ellipsis;
+    font-size: 1.3em;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.news__card footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
